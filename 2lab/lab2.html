@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №2. Вариант 6.</title>
+    <script src="lab2.js"></script>
+    <link rel="stylesheet" type="text/css">
+</head>
+<body>
+<label> Получить матрицу <b><i>C</i><sub>p<sub id="x">x</sub>q</sub></b>.
+        <b><i>C</i><sub>ij</sub> = &sum;<sub>k</sub> d<sub>kij</sub></b> </label> <br>
+<label> где <b>d<sub>kij</sub> = (|a<sub>ik</sub>| &le; |b<sub>kj</sub>|) ?
+            a<sub>ik</sub> * b<sub>kj</sub> : (b<sub>ik</sub> = 0) ? 
+            (a<sub>ik</sub>)<sup>2</sup> + b<sub>kj</sub> :
+            (a<sub>ik</sub>)<sup>2</sup> - |a<sub>ik</sub> * b<sub>kj</sub>| </b></label> <br>
+<br>
+<label> Введите размеры матриц</label> <br>
+<b>p</b> =  <input id="getP" placeholder="Введите p" /> 
+<b>m</b> = <input id="getM" placeholder="Введите m" /> 
+<b>q</b> =  <input id="getQ" placeholder="Введите q" /> <br>
+<br>
+
+<label> Введите время выполнения операций:</label> <br>
+<input id="addition" placeholder="Сложение" /><br>
+<input id="subtraction" placeholder="Вычитание" /><br>
+<input id="abs" placeholder="Модуль" /><br>
+<input id="compare" placeholder="Сравнение" /><br>
+<input id="multiplication" placeholder="Уножение" /><br>
+<input id="squaring" placeholder="Возведение в квадрат" /><br>
+<br>
+
+<label> Введите количество процессорных элементов</label> <br>
+<b>n</b> = <input id="getN" placeholder="Введите n" /><br>
+<br>
+
+<button id="Build" onclick='start();' >Рассчитать</button><br>
+<br>
+
+<div id="MatrixATitle"></div>
+<table id="MatrixA" border = "1"> </table><br>
+<div id="MatrixBTitle"></div>
+<table id="MatrixB" border = "1"> </table><br>
+<div id="MatrixCTitle"></div>
+<table id="MatrixC" border = "1"> </table><br>
+
+<br>
+<div id="CountTimeMassage"></div>
+
+</body>
+</html>
